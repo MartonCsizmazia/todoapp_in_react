@@ -6,11 +6,7 @@ import KeyStrokeHandler from './KeyStrokeHandler';
 class App extends Component {
     render() {
         return (
-            <StateProvider>
-                <KeyStrokeHandler>
                     <TodoList/>
-                </KeyStrokeHandler>
-            </StateProvider>
         );
     }
 }
