@@ -1,6 +1,6 @@
 import React from 'react';
-import InputBox from './InputBox';
-import SearchBox from './SearchBox';
+import InputBox from './Input';
+import Search from './Search';
 import {MODE_SEARCH, MODE_CREATE} from './mode';
 
 export default function InputWrapper(props) {
@@ -11,7 +11,7 @@ export default function InputWrapper(props) {
             return <InputBox {...{addNew}}/>;
 
         case MODE_SEARCH:
-            return <SearchBox {...{query, setSearchQuery}}/>;
+            return <Search {...{query, setSearchQuery}}/>;
 
         default:
             return null;

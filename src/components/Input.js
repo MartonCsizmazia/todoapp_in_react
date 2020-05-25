@@ -1,7 +1,7 @@
 import React from 'react';
+import enhance from './InputBoxWrapper';
 
-
-function InputBox(props) {
+function Input(props) {
 
     return (
         <input autoFocus
@@ -11,3 +11,5 @@ function InputBox(props) {
         />
     );
 }
+
+export default enhance(Input);
